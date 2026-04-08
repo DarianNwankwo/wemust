@@ -1,0 +1,19 @@
+{
+  "name": "wemust",
+  "version": "0.1.0",
+  "description": "Deterministic agent orchestration — coordinate AI agents through executable acceptance criteria, not LLM inference",
+  "type": "module",
+  "bin": {
+    "wemust": "./bin/wemust.mjs"
+  },
+  "exports": {
+    ".": "./src/core.mjs",
+    "./core": "./src/core.mjs"
+  },
+  "scripts": {
+    "test": "node test/run.mjs",
+    "dev:dashboard": "node src/dashboard/server.mjs"
+  },
+  "keywords": ["agent", "orchestration", "ai", "coordination", "mcp"],
+  "license": "MIT"
+}
